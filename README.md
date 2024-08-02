@@ -11,7 +11,8 @@ go-mcprotocol is a library for PLC (Programmable Logic Controller) access
 You can read plc register bellow codes.
 
 ```go
-	client, err := mcp.New3EClient("192.168.200.208", 6000, mcp.NewLocalStation())
+
+    client, err := mcp.New3EClient("192.168.200.208", 6000, mcp.NewLocalStation())
     fmt.Println("end connect")
     log.Printf("tufei :%s", "end connect")
     if err != nil {
